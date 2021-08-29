@@ -1,7 +1,8 @@
 Start of the project. 
 
-I have it finding and loading the JS on the page.
+Takes in the URL of a deals page and extracts the game names and prices.
+Extracted list is then put into a html file.
 
 Next steps:
-Parse out the data and get the product name, then prices.
-
+- Parse multiple pages, not just one
+- Make a call to metacritic to get the review score
