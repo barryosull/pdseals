@@ -16,8 +16,10 @@ class ParserTest extends TestCase
 
         $parser = new Parser();
 
-        $deals = $parser->parse($html);
+        $games = $parser->parseFullGames($html);
 
-        var_dump($deals);
+        $this->assertEquals($gameCount = 22, count($games), "Missing games from list");
+
+        var_dump($games);
     }
 }
